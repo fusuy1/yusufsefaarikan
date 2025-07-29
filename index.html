@@ -2,43 +2,424 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusuf Sefa Arıkan | Kişisel Web Sitesi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Yusuf Sefa Arıkan - 16 yaşında yazılım geliştirici ve digital sanatçı. HTML, CSS, JavaScript, C#, C++ ve After Effects ile yaratıcı projeler geliştiriyorum.">
+    <meta name="keywords" content="yazılım geliştirici, web tasarım, HTML, CSS, JavaScript, C#, After Effects, Ankara">
+    <meta name="author" content="Yusuf Sefa Arıkan">
+    <title>Yusuf Sefa Arıkan - Yazılım Geliştirici</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="lamp-toggle" title="Gece Modu" class="lamp-on">
-        <div class="lamp-base"></div>
-        <div class="lamp-neck"></div>
-        <div class="lamp-head"></div>
-        <div class="lamp-light"></div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-text">
+                <span class="letter">Y</span>
+                <span class="letter">U</span>
+                <span class="letter">S</span>
+                <span class="letter">U</span>
+                <span class="letter">F</span>
+                
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="home.html">Anasayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="projects.html">Projelerim</a></li>
-            <li><a href="contact.html">İletişim</a></li>
-        </ul>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Yusuf Sefa ARIKAN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+                <li><a href="#experience" class="nav-link">Deneyim</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-    <section id="home" class="section home-section">
-        <div class="container">
-            <!-- <img src="" alt="Yusuf Sefa Arıkan" class="profile-img animate__animated animate__fadeInDown"> -->
-            <h1 class="animate__animated animate__fadeInUp">Yusuf Sefa Arıkan</h1>
-            <p class="animate__animated animate__fadeInUp animate__delay-1s">3-4 yıldır yazılımla uğraşıyorum. HTML, CSS, JavaScript, C++ biliyorum. Şu an Gazi Meslek Lisesi'nde okuyorum ve stajımı T.C. Cumhurbaşkanlığı'nda yapıyorum.</p>
-            <a href="about.html" class="btn neon-btn animate__animated animate__pulse animate__infinite">Beni Tanı</a>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Merhaba, Ben</span>
+                        <span class="title-main">Yusuf Sefa Arıkan</span>
+                        <span class="title-sub">Yazılım Geliştirici & Digital Sanatçı</span>
+                    </h1>
+                    <p class="hero-description">
+                        16 yaşında, 5 yıllık yazılım deneyimi olan tutkulu bir geliştirici.
+                        HTML, CSS, JavaScript, C#, C++ ve After Effects ile yaratıcı projeler geliştiriyorum.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>İletişime Geç</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span>Daha Fazla</span>
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="profile-ring"></div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="float-element" data-tech="HTML">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="float-element" data-tech="CSS">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="float-element" data-tech="JS">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="float-element" data-tech="C#">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
-    
-    <footer>
-        <p>© 2025 Yusuf Sefa Arıkan. Tüm hakları saklıdır.</p>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hakkımda</span>
+                <h2 class="section-title">Kim Ben?</h2>
+                <p class="section-subtitle">Yazılım dünyasında 5 yıllık serüvenim</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>Hikayem</h3>
+                        <p>
+                            16 yaşında olan ben, 11 yaşımdan beri yazılım dünyasının büyülü atmosferinde kendimi geliştiriyorum.
+                            Gaz Mesleki ve Teknik Anadolu Lisesi Yazılım bölümü 12. sınıf öğrencisiyim.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Mevcut Durum</h3>
+                        <p>
+                            Şu anda Cumhurbaşkanlığında staj yaparak profesyonel iş deneyimi kazanıyorum.
+                            Bu değerli deneyim, teorik bilgilerimi pratiğe dökme fırsatı sunuyor.
+                        </p>
+                    </div>
+                    <div class="achievement-cards">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="achievement-info">
+                                <h4>5 Yıl</h4>
+                                <p>Yazılım Deneyimi</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="achievement-info">
+                                <h4>12. Sınıf</h4>
+                                <p>Yazılım Bölümü</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="achievement-info">
+                                <h4>Cumhurbaşkanlığı</h4>
+                                <p>Staj Programı</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Yıl Deneyim</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="6">0</div>
+                            <div class="stat-label">Programlama Dili</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="16">0</div>
+                            <div class="stat-label">Yaşında</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Yeteneklerim</span>
+                <h2 class="section-title">Teknolojik Becerilerim</h2>
+                <p class="section-subtitle">Sürekli öğrenme ve gelişim halindeki teknoloji yığınım</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Frontend Teknolojileri
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend & Desktop
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-video"></i>
+                        Digital Medya
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">After Effects</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Deneyim</span>
+                <h2 class="section-title">Eğitim & Kariyerim</h2>
+                <p class="section-subtitle">Profesyonel gelişim yolculuğum</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3>Cumhurbaşkanlığı Stajı</h3>
+                            <span class="timeline-date">2025 - Devam Ediyor</span>
+                            <p>
+                                Cumhurbaşkanlığında yazılım geliştirme alanında staj yaparak profesyonel iş deneyimi kazanıyorum. Büyük ölçekli projelerde yer alma fırsatı buluyorum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3>Gaz MTAL - Yazılım Bölümü</h3>
+                            <span class="timeline-date">2022 - 2025</span>
+                            <p>
+                                Gazi Mesleki ve Teknik Anadolu Lisesi Yazılım bölümünde eğitim görmekteyim. Şu anda 12.sınıf öğrencisiyim ve teorik bilgilerimi pratiğe dökme konusunda uzmanlaşıyorum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3>Yazılıma Başlangıç</h3>
+                            <span class="timeline-date">2020</span>
+                            <p>
+                                11 yaşımda yazılım dünyasına adım attım. HTML ve CSS  öğrenerek başladığım bu yolculukta,sürekli öğrenme ve gelişim halindeyim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">İletişim</span>
+                <h2 class="section-title">Benimle İletişime Geç</h2>
+                <p class="section-subtitle">Projeleriniz için işbirliği yapalım</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>arikanyusufsefa@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Konum</h3>
+                            <p>Ankara, Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Durum</h3>
+                            <p>12. Sınıf Öğrencisi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name">İsim</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">
+                            <span>Mesaj Gönder</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Yusuf Sefa Arıkan</h3>
+                    <p>Yazılım Geliştirici & Digital Sanatçı</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yusuf Sefa Arıkan. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
